@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="categorias_incidencias">
+        <item>Seleccionar categoria</item>
+        <item>Infraestructura</item>
+        <item>Seguridad</item>
+        <item>Medio ambiente</item>
+        <item>Otro</item>
+    </string-array>
+
+</resources>

@@ -40,15 +40,15 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/editTextText7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/etTitulo"
+            android:layout_width="143dp"
+            android:layout_height="33dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:ems="10"
+            android:hint="Ej: Poste de luz en mal estado"
             android:inputType="text"
-            android:text="Name"
-            android:textSize="12sp"
+            android:textSize="10sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -62,7 +62,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
+            app:layout_constraintTop_toBottomOf="@+id/etTitulo" />
 
         <TextView
             android:id="@+id/textView8"
@@ -74,7 +74,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+            app:layout_constraintTop_toBottomOf="@+id/etDescripcion" />
 
         <TextView
             android:id="@+id/textView9"
@@ -98,25 +98,48 @@
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/textView8"
-            app:layout_constraintTop_toBottomOf="@+id/txtHora" />
+            app:layout_constraintTop_toBottomOf="@+id/txtHora"/>
+
+
+        <TextView
+            android:id="@+id/txtCoordenadas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Sin ubicación seleccionada"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@id/textView10"
+            app:layout_constraintTop_toBottomOf="@id/textView10" />
+
+        <Button
+            android:id="@+id/btnElegirUbicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Elegir en mapa"
+            app:layout_constraintStart_toStartOf="@id/txtCoordenadas"
+            app:layout_constraintTop_toBottomOf="@id/txtCoordenadas" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/spCategoria"
             android:layout_width="156dp"
             android:layout_height="27dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
+            android:entries="@array/categorias_incidencias"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
         <EditText
-            android:id="@+id/editTextTextMultiLine"
+            android:id="@+id/etDescripcion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="12dp"
             android:ems="10"
             android:gravity="start|top"
+            android:hint="Describe la incidencia"
             android:inputType="textMultiLine"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -140,8 +163,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="36dp"
             android:layout_marginTop="8dp"
-            android:text="TextView"
-            app:layout_constraintStart_toEndOf="@+id/editTextText7"
+            android:text="--/--/----"
+            app:layout_constraintStart_toEndOf="@+id/etTitulo"
             app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
         <TextView
@@ -150,8 +173,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="36dp"
             android:layout_marginTop="16dp"
-            android:text="TextView"
-            app:layout_constraintStart_toEndOf="@+id/editTextTextMultiLine"
+            android:text="--/--"
+            app:layout_constraintStart_toEndOf="@+id/etDescripcion"
             app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
         <Button

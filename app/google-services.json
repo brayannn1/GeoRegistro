@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "657710515836",
+    "project_id": "georegistro-d8624",
+    "storage_bucket": "georegistro-d8624.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657710515836:android:8e0f4a7cace3770a2cebf9",
+        "android_client_info": {
+          "package_name": "cl.brayan.georegistro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrwFfQynxtE-bRLXFD6PbMf84CsJHYiRw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
